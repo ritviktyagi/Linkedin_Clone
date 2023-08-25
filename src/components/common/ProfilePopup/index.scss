@@ -1,0 +1,35 @@
+.popup-card{
+    height: auto;
+    width: 200px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 5px;
+    top: 4rem;
+    padding: 20px;
+    border: 1px solid #a8a8a8;
+    flex-direction: column;
+    z-index: 99;
+
+    .name{
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.9);
+        font-weight: 600;
+        text-align: left;
+        margin-top: -7px;
+    }
+
+    .headline{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: -15px;
+    }
+
+    .popup-options{
+        cursor: pointer;
+        list-style-type: none;
+    }
+}

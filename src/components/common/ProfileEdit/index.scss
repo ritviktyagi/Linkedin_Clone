@@ -1,0 +1,60 @@
+$linkedinBlue: #0072b1;
+$linkedinBlue1: #004c75 ;
+
+.profile-card{
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    margin: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+
+    .edit-btn{
+        position: absolute;
+        right: 20px;
+
+        button{
+            cursor: pointer;
+        }
+    }
+
+    .profile-edit-inputs{
+        display: grid;
+        margin-top: 40px;
+        gap: 20px;
+
+        label{
+            font-family: system-ui;
+        }
+
+        .edit-input{
+            width: 300px;
+            height: 40px;
+        }
+    }
+
+    .save-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .save-btn{
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        background-color: $linkedinBlue;
+        color: antiquewhite;
+        margin-top: 20px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        font-family: system-ui;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+.close-icon{
+    cursor: pointer;
+}

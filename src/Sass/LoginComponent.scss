@@ -1,0 +1,128 @@
+$linkedinBlue: #0072b1;
+$linkedinBlue1: #004c75 ;
+
+.login-wrapper{
+    background-color: rgba(255, 255, 255, 0.87);
+    height: 100vh;
+    .login-wrapper-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+        font-family: system-ui;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .sub-heading{
+        font-family: system-ui;
+        margin-top: -20px;   
+    }
+}
+
+.login-btn{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    background-color: $linkedinBlue;
+    color: antiquewhite;
+    margin-top: 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-family: system-ui;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.login-btn:hover {
+    background-color: $linkedinBlue1;
+}
+
+.linkedinlogo{
+    width: 80px;
+    top: 20px;
+}
+
+.auth-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    .common-input{
+        height: 30px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #212121;
+        border-radius: 3px;
+        font-family: system-ui;
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    .common-input:focus {
+        outline: 1px solid $linkedinBlue;
+    }
+    ::placeholder {
+        font-family: system-ui;
+        font-size: 16px;
+    }
+}
+
+.hr-text {
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+    &:before {
+      content: '';
+      // use the linear-gradient for the fading effect
+      // use a solid background color for a solid bar
+      background: linear-gradient(to right, transparent, #818078, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: attr(data-content);
+      position: relative;
+      display: inline-block;
+      color: black;
+  
+      padding: 0 .5em;
+      line-height: 1.5em;
+      // this is really the only tricky part, you need to specify the background color of the container element...
+      color: #818078;
+      background-color: #fcfcfa;
+    }
+  }
+
+  .google-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .google-btn{
+        width: 300px !important;
+    }
+
+    .go-to-signup{
+        margin-left: 50px;
+        font-size: 18px;
+    }
+
+    .join-now{
+        color: $linkedinBlue1;
+        font-family: system-ui;
+        cursor: pointer;
+        font-size: 18px;
+    }
+  }
